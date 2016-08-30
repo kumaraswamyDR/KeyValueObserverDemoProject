@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *valueToSave = @"someValue";
+    [[NSUserDefaults standardUserDefaults] setObject:valueToSave forKey:@"preferenceName"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 

@@ -28,9 +28,18 @@
     [_mainView.moveToOtherViewController addTarget:self action:@selector(movetonewcontroller) forControlEvents:UIControlEventTouchUpInside];
     
     _dataObject = [DataObject sharedInstance];
+    
+    NSString *savedValue = [[NSUserDefaults standardUserDefaults]
+                            stringForKey:@"preferenceName"];
+    if([savedValue isEqualToString:@"someValue"])
+    {
     [self performSelector:@selector(incrementTimer) withObject:nil afterDelay:5];
+        NSString *valueToSave = @"someValue1";
+        [[NSUserDefaults standardUserDefaults] setObject:valueToSave forKey:@"preferenceName"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+}
 -(void)movetonewcontroller
 {
     [_mainView removeFromSuperview];
@@ -50,7 +59,9 @@
 {
     _mainView.frame = self.view.frame;
 }
-
+-(void)dealloc{
+    
+}
 
 
 
