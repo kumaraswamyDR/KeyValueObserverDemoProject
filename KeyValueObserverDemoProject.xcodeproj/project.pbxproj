@@ -14,6 +14,10 @@
 		ECD142581D73746E00C01D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD142571D73746E00C01D24 /* Assets.xcassets */; };
 		ECD1425B1D73746E00C01D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD142591D73746E00C01D24 /* LaunchScreen.storyboard */; };
 		ECD142661D73746E00C01D24 /* KeyValueObserverDemoProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD142651D73746E00C01D24 /* KeyValueObserverDemoProjectUITests.m */; };
+		ECD142721D7375C600C01D24 /* DataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD142711D7375C600C01D24 /* DataObject.m */; };
+		ECD142751D73760C00C01D24 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD142741D73760C00C01D24 /* MainView.m */; };
+		ECD142781D75A3DE00C01D24 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD142771D75A3DE00C01D24 /* NewViewController.m */; };
+		ECD1427B1D75B59200C01D24 /* NewMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD1427A1D75B59200C01D24 /* NewMainView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		ECD142611D73746E00C01D24 /* KeyValueObserverDemoProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyValueObserverDemoProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD142651D73746E00C01D24 /* KeyValueObserverDemoProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyValueObserverDemoProjectUITests.m; sourceTree = "<group>"; };
 		ECD142671D73746E00C01D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD142701D7375C600C01D24 /* DataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataObject.h; sourceTree = "<group>"; };
+		ECD142711D7375C600C01D24 /* DataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataObject.m; sourceTree = "<group>"; };
+		ECD142731D73760C00C01D24 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		ECD142741D73760C00C01D24 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		ECD142761D75A3DE00C01D24 /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		ECD142771D75A3DE00C01D24 /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
+		ECD142791D75B59200C01D24 /* NewMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewMainView.h; sourceTree = "<group>"; };
+		ECD1427A1D75B59200C01D24 /* NewMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewMainView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,14 @@
 				ECD1424F1D73746E00C01D24 /* AppDelegate.m */,
 				ECD142511D73746E00C01D24 /* ViewController.h */,
 				ECD142521D73746E00C01D24 /* ViewController.m */,
+				ECD142761D75A3DE00C01D24 /* NewViewController.h */,
+				ECD142771D75A3DE00C01D24 /* NewViewController.m */,
+				ECD142791D75B59200C01D24 /* NewMainView.h */,
+				ECD1427A1D75B59200C01D24 /* NewMainView.m */,
+				ECD142731D73760C00C01D24 /* MainView.h */,
+				ECD142741D73760C00C01D24 /* MainView.m */,
+				ECD142701D7375C600C01D24 /* DataObject.h */,
+				ECD142711D7375C600C01D24 /* DataObject.m */,
 				ECD142541D73746E00C01D24 /* Main.storyboard */,
 				ECD142571D73746E00C01D24 /* Assets.xcassets */,
 				ECD142591D73746E00C01D24 /* LaunchScreen.storyboard */,
@@ -211,9 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD142751D73760C00C01D24 /* MainView.m in Sources */,
+				ECD142721D7375C600C01D24 /* DataObject.m in Sources */,
 				ECD142531D73746E00C01D24 /* ViewController.m in Sources */,
+				ECD142781D75A3DE00C01D24 /* NewViewController.m in Sources */,
 				ECD142501D73746E00C01D24 /* AppDelegate.m in Sources */,
 				ECD1424D1D73746E00C01D24 /* main.m in Sources */,
+				ECD1427B1D75B59200C01D24 /* NewMainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +424,7 @@
 				ECD1426C1D73746E00C01D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECD1426D1D73746E00C01D24 /* Build configuration list for PBXNativeTarget "KeyValueObserverDemoProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +433,7 @@
 				ECD1426F1D73746E00C01D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
