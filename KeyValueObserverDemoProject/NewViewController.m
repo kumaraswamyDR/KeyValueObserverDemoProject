@@ -31,7 +31,7 @@
     [_mainView removeFromSuperview];
     _mainView = nil;
     ViewController *fitnessViewController = [[ViewController alloc] init];
-    [self presentModalViewController:fitnessViewController animated:YES];
+    [self presentViewController:fitnessViewController animated:YES completion:nil];
 }
 -(void)viewWillLayoutSubviews{
     [super viewWillLayoutSubviews];
